@@ -3110,7 +3110,7 @@ AC_DEFUN([TEA_SETUP_COMPILER], [
     # Common compiler flag setup
     #--------------------------------------------------------------------
 
-    AC_C_BIGENDIAN
+    AC_C_BIGENDIAN([AC_DEFINE(WORDS_BIGENDIAN)], [], [], [AC_DEFINE(AC_APPLE_UNIVERSAL_BUILD, 1)])
 ])
 
 #------------------------------------------------------------------------
